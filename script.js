@@ -113,25 +113,25 @@ chainedGreetings("Hi!", 1000)
     });
 
 
-//Exercise 9: Read File → Count Words → Save Result (Chained .then) EXTRA
-const fs = require("fs").promises;
-function processFile(inputPath, outputPath) {
-    return fs.readFile(inputPath, "utf8")
-        .then((content) => {
-            console.log(content);
-        });
-}
-processFile("input.txt", "output.txt")
-    .then((content) => {
-        const wordCount = content.split(/\s+/).length;
-        return wordCount;
-    })
-    .then((wordCount) => {
-        console.log(`Word Count: ${wordCount}`);
+// //Exercise 9: Read File → Count Words → Save Result (Chained .then) EXTRA
+// const fs = require("fs").promises;
+// function processFile(inputPath, outputPath) {
+//     return fs.readFile(inputPath, "utf8")
+//         .then((content) => {
+//             console.log(content);
+//         });
+// }
+// processFile("input.txt", "output.txt")
+//     .then((content) => {
+//         const wordCount = content.split(/\s+/).length;
+//         return wordCount;
+//     })
+//     .then((wordCount) => {
+//         console.log(`Word Count: ${wordCount}`);
 
-    });
-//Exercise 10: Get Data → Parse JSON → Show Title (Chained .then) EXTRA
-const https = require("https");
+//     });
+// //Exercise 10: Get Data → Parse JSON → Show Title (Chained .then) EXTRA
+// const https = require("https");
 
 
 
